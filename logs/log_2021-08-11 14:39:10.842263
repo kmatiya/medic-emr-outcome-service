@@ -1,0 +1,13 @@
+2021-08-11 14:39:10,842 INFO ***************************************************************************************************
+2021-08-11 14:39:10,842 INFO Running Process for visit verification and patient trace outcomes today:2021-08-11
+2021-08-11 14:39:10,842 INFO Get Visit verification data
+2021-08-11 14:39:10,843 DEBUG Starting new HTTPS connection (1): pih-malawi.dev.medicmobile.org:443
+2021-08-11 14:39:13,783 DEBUG https://pih-malawi.dev.medicmobile.org:443 "GET /medic/_design/medic-client/_view/yendanafe_omrs?startkey=%5B%22visit_verification%22,1627941600000%5D&endkey=%5B%22visit_verification%22,1628685550842%5D&include_docs=true HTTP/1.1" 404 52
+2021-08-11 14:39:13,787 INFO Verification response: status code: 404. Response:{"error":"not_found","reason":"missing_named_view"}
+
+2021-08-11 14:39:13,788 INFO {'error': 'not_found', 'reason': 'missing_named_view'}
+2021-08-11 14:39:13,788 INFO Get Trace Outcomes Data
+2021-08-11 14:39:13,793 DEBUG Starting new HTTPS connection (1): pih-malawi.dev.medicmobile.org:443
+2021-08-11 14:39:16,038 DEBUG https://pih-malawi.dev.medicmobile.org:443 "GET /medic/_design/medic-client/_view/yendanafe_omrs?startkey=%5B%22trace_follow_up%22,1627941600000%5D&endkey=%5B%22trace_follow_up%22,1628685550842%5D&include_docs=true HTTP/1.1" 404 52
+2021-08-11 14:39:16,042 INFO Trace Outcomes response: status code: 404. Response:{"error":"not_found","reason":"missing_named_view"}
+
